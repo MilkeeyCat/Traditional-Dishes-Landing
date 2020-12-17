@@ -45,6 +45,7 @@
         border: 0;
         color: #fff;
         font-size: 18px;
+        position: relative;
     }
     
     &__burger {
@@ -65,11 +66,11 @@
             background: #000;
             position: relative;
         }
-
+        
         &:before {
             top: -7px;
         }
-
+        
         &:after {
             top: 5px;
         }
@@ -79,7 +80,7 @@
 @media screen and (max-width: 1040px) {
     .header {
         padding: 0 30px;
-
+        
         &__nav,
         &__donate-btn { 
             display: none;

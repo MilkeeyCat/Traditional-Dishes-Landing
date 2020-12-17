@@ -11,12 +11,14 @@
         height: 550px;
         border-radius: 40px;
         margin-left: 50px;
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     &__text {
         flex-basis: 300px;
         flex-grow: 1;
-        // max-width: 860px;
     }
 
     &__title {

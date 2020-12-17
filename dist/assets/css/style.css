@@ -3384,6 +3384,7 @@ ul {
     border: 0;
     color: #fff;
     font-size: 18px;
+    position: relative;
 }
 
 .header__burger {
@@ -3458,6 +3459,12 @@ ul {
     height: 550px;
     border-radius: 40px;
     margin-left: 50px;
+}
+
+.dish__image:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .dish__text {
