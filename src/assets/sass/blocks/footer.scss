@@ -1,0 +1,27 @@
+.footer {
+    background: #3C3C3C;
+    margin-top: 120px;
+    padding: 20px 0;
+    
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 30px;
+        font-family: "Fredericka the Great", cursive;
+        color: #fff;
+        text-align: center;
+        
+        p {
+            margin: 0;
+            line-height: 40px;
+        }
+    }
+}
+
+@media screen and(max-width: 650px) {
+    .footer .container {
+        font-size: 25px;
+    }
+}

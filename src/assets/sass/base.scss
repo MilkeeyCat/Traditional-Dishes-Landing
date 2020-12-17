@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url("/assets/images/background.png");
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container {
+    max-width: 1564px;
+    margin: 0 auto;
+}
+
+.header,
+.content,
+.footer {
+    padding: 0 20px;
+}

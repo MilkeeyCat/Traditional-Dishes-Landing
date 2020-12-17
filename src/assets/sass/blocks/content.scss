@@ -1,0 +1,16 @@
+.content {
+    &__title {
+        text-align: center;
+        margin-top: 126px;
+        font-size: 64px;
+        color: #626262;
+    }
+}
+
+@media screen and(max-width: 650px) {
+    .content {
+        &__title {
+            font-size: 50px;
+        }
+    }
+}

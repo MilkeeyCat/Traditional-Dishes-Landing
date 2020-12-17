@@ -1,0 +1,91 @@
+.header {
+    margin-top: 84px;
+    
+    a, i {
+        color: #525252;
+    }
+    
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        font-size: 30px;
+        font-family: "Fredericka the Great", cursive;
+    }
+    &__nav {
+        display: flex;
+        li {
+            margin: 0 30px;
+            position: relative;
+            
+            a {
+                display: flex;
+                align-items: center;
+            }
+        }
+        
+        &-item_has-children {
+            padding-right: 10px;
+            & > ul {
+                display: none;
+            }
+        }
+        
+        &-arrow {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    }
+    &__donate-btn {
+        padding: 14px 53px;
+        border-radius: 70px;
+        background: #527C16;
+        border: 0;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    &__burger {
+        display: none;
+        cursor: pointer;
+        
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+        }
+        
+        &,
+        &:before,
+        &:after {
+            width: 20px;
+            height: 2px;
+            background: #000;
+            position: relative;
+        }
+
+        &:before {
+            top: -7px;
+        }
+
+        &:after {
+            top: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .header {
+        padding: 0 30px;
+
+        &__nav,
+        &__donate-btn { 
+            display: none;
+        }
+        &__burger {
+            display: block;
+        }
+    }
+}
